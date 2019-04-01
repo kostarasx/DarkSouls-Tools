@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="-Infinity" prefHeight="800.0" prefWidth="800.0" style="-fx-background-color: #383838;" stylesheets="@../../../styles/MainMenu.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="darksoulstools.optimizer.OptimizerController">
+   <children>
+      <VBox alignment="CENTER" layoutX="-9.0" layoutY="40.0" prefHeight="200.0" prefWidth="800.0" spacing="10.0">
+         <children>
+            <Label alignment="TOP_LEFT" text="Select Game" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="68.0" prefWidth="757.0" spacing="10.0">
+               <children>
+                  <RadioButton fx:id="ds1RadioBtn" mnemonicParsing="false" onAction="#radioSelected" text="Dark Souls I" textFill="WHITE">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="gameRadioButton" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="ds2RadioBtn" mnemonicParsing="false" onAction="#radioSelected" text="Dark Souls II" textFill="WHITE" toggleGroup="$gameRadioButton">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton fx:id="ds3RadioBtn" mnemonicParsing="false" onAction="#radioSelected" selected="true" text="Dark Souls III" textFill="WHITE" toggleGroup="$gameRadioButton">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </RadioButton>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox alignment="TOP_CENTER" layoutX="200.0" layoutY="298.0" prefHeight="383.0" prefWidth="400.0">
+         <children>
+            <Button alignment="CENTER" mnemonicParsing="false" text="Best Class" VBox.vgrow="NEVER" />
+         </children>
+      </VBox>
+      <HBox alignment="BASELINE_RIGHT" layoutY="730.0" prefHeight="70.0" prefWidth="800.0" scaleShape="false" spacing="20.0">
+         <children>
+            <Button fx:id="backBtn" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#backBtnClicked" text="Back" />
+            <Button fx:id="exitBtn" mnemonicParsing="false" onAction="#extiBtnClicked" text="Exit" />
+         </children>
+         <padding>
+            <Insets right="40.0" />
+         </padding>
+      </HBox>
+   </children>
+</AnchorPane>

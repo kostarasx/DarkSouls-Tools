@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="-Infinity" prefHeight="800.0" prefWidth="420.0" style="-fx-background-color: #383838;" stylesheets="@../../../styles/MainMenu.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="darksoulstools.mainmenu.MainMenuController">
+   <children>
+      <HBox alignment="BASELINE_RIGHT" layoutY="730.0" prefHeight="70.0" prefWidth="800.0" scaleShape="false" spacing="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Button fx:id="backBtn" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#backBtnClicked" text="Back" />
+            <Button fx:id="exitBtn" mnemonicParsing="false" onAction="#extiBtnClicked" text="Exit" />
+         </children>
+         <padding>
+            <Insets right="40.0" />
+         </padding>
+      </HBox>
+      <VBox alignment="CENTER" layoutY="43.0" prefHeight="200.0" prefWidth="800.0" spacing="10.0">
+         <children>
+            <Label alignment="TOP_LEFT" text="Select Tool" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="68.0" prefWidth="800.0">
+               <children>
+                  <Button alignment="CENTER" mnemonicParsing="false" onAction="#optimizerBtnClicked" prefHeight="28.0" prefWidth="154.0" text="Class Optimizer" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

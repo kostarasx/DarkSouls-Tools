@@ -1,0 +1,7 @@
+
+/*The background picture of the main menu */
+.root{
+	-fx-background-image:url(/image/welcomemenu.jpg);
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100% 100%;
+}
